@@ -5,6 +5,8 @@ var app = express()
 var db = require("./database.js");
 // Require md5 MODULE
 var md5 = require("md5");
+//this was in the instructions but not in the code?
+var bodyParser = require("body-parser");
 
 // Make Express use its own built-in body parser
 app.use(express.urlencoded({ extended: true }));
